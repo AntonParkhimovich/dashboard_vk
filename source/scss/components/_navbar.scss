@@ -1,0 +1,59 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:98px;
+    height: 880px;
+    background-color:white;
+    padding-top: 46px;
+}
+.navbar__image{
+   width: 51px;
+   height: 35px;
+}
+.navbar__item{
+    width: 98px;
+    height: 50px;
+}
+.navbar__item:hover{
+    filter: invert(56%) sepia(83%) saturate(1687%) hue-rotate(207deg) brightness(88%) contrast(87%);
+    border-left: 4px solid #7F7FD5;
+    border-radius: 1px 1px;
+}
+.navbar__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98px;
+    height: 405px;
+}
+.navbar__link{
+    display: block;
+    width: 98px;
+    height: 50px;
+}
+
+.item--home{
+    background: url(/source/img/icons/home-icon.png)no-repeat center;
+}
+
+
+.item--board{
+    background: url(/source/img/icons/board-icon.png)no-repeat center;
+}
+.item--friend{
+    background: url(/source/img/icons/frends-icon.png)no-repeat center;
+}
+.item--message{
+    background: url(/source/img/icons/message-icon.png)no-repeat center;
+}
+.item--video{
+    background: url(/source/img/icons/video-icon.png)no-repeat center;
+}
+.item--statistics{
+    background: url(/source/img/icons/statistics-icon.png)no-repeat center;
+}
+.item--settings{
+    background: url(/source/img/icons/settings-icon.png)no-repeat center;
+}
