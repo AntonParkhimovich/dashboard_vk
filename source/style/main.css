@@ -390,8 +390,9 @@ template {
 .navbar__item:hover {
   -webkit-filter: invert(56%) sepia(83%) saturate(1687%) hue-rotate(207deg) brightness(88%) contrast(87%);
           filter: invert(56%) sepia(83%) saturate(1687%) hue-rotate(207deg) brightness(88%) contrast(87%);
+  border-top: 4px solid transparent;
   border-left: 4px solid #7F7FD5;
-  border-radius: 1px 1px;
+  border-bottom: 4px solid transparent;
 }
 
 .navbar__list {

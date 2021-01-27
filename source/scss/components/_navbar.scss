@@ -18,8 +18,10 @@
 }
 .navbar__item:hover{
     filter: invert(56%) sepia(83%) saturate(1687%) hue-rotate(207deg) brightness(88%) contrast(87%);
+    border-top: 4px solid transparent;
     border-left: 4px solid #7F7FD5;
-    border-radius: 1px 1px;
+    border-bottom: 4px solid transparent;
+
 }
 .navbar__list{
     display: flex;
@@ -76,7 +78,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    // background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
   }
