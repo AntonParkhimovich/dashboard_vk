@@ -4,3 +4,8 @@
     box-sizing: border-box;
     border-radius: 13px;    
 }
+@mixin h1-fontstyle{
+    font-family: 'Gilroy';
+    font-weight:700;
+    font-size: 30px;
+}

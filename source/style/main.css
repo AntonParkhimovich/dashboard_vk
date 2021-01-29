@@ -383,6 +383,12 @@ template {
   background: url(/source/img/background/background_figure.png) no-repeat center;
 }
 
+.h1 {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
