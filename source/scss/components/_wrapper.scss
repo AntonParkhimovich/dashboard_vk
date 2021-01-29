@@ -1,6 +1,7 @@
 .wrapper{
     @include card-style;
-    width: 81%;
+    display: flex;
+    position: relative;
     max-width: 1280px;
     height: 880px;
     margin:160px auto;
@@ -8,16 +9,13 @@
     border-radius: 14px
 }
 .wrapper::before{
-    display: block;
+    display: inline-block;
     position: absolute;
-    bottom: 99px;
+    bottom: 257px;
     right: 211px;
     z-index: -1;
     content: '';
     width: 1498px;
     height: 806px;
     background: url(/source/img/background/background_figure.png) no-repeat center;
-}
-.h1{
- @include h1-fontstyle;
 }
