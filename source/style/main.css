@@ -366,16 +366,21 @@ template {
   width: 81%;
   max-width: 1280px;
   height: 880px;
-  margin: 0 auto;
+  margin: 160px auto;
+  background-color: #EFF3F9;
+  border-radius: 14px;
 }
 
 .wrapper::before {
-  content: '';
   display: block;
-  width: 460px;
-  height: 460px;
-  border-radius: 50%;
-  background-color: yellow;
+  position: absolute;
+  bottom: 99px;
+  right: 211px;
+  z-index: -1;
+  content: '';
+  width: 1498px;
+  height: 806px;
+  background: url(/source/img/background/background_figure.png) no-repeat center;
 }
 
 .navbar {
