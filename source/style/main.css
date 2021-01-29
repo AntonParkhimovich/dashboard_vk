@@ -484,6 +484,7 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   width: 98px;
   height: 880px;
   background-color: white;
