@@ -788,6 +788,7 @@ input:checked + .slider:before {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 37px;
 }
 
 .main__title::after {
@@ -796,6 +797,9 @@ input:checked + .slider:before {
   width: 26px;
   height: 5px;
   background: url(/source/img/icons/dot_icon.png) no-repeat right;
+  position: relative;
+  left: 90%;
+  bottom: 13px;
 }
 
 .card__bottom {
@@ -825,5 +829,26 @@ input:checked + .slider:before {
   font-size: 20px;
   line-height: 24px;
   color: #979797;
+  margin-right: 20px;
+}
+
+.main__content::after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  position: relative;
+  left: 13%;
+  background: url(/source/img/icons/arrow_icon.png) no-repeat left;
+}
+
+.negative-meaning:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  position: relative;
+  left: 13%;
+  background: url(/source/img/icons/arrow-icon-negative.png) no-repeat left;
 }
 /*# sourceMappingURL=main.css.map */
