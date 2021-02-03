@@ -20,7 +20,7 @@
     display: block;
     width: 26px;
     height: 5px;
-    background: url(../source/img/icons/dot_icon.png) no-repeat right;
+    background: url(../../source/img/icons/dot_icon.png) no-repeat right;
     position: relative;
     left: 90%;
     bottom: 13px;
@@ -46,7 +46,7 @@
     height: 12px;
     position: relative;
     left: 13%;
-    background: url(../source/img/icons/arrow_icon.png) no-repeat left;
+    background: url(../../source/img/icons/arrow_icon.png) no-repeat left;
 }
 .negative-meaning:after{
     content: '';
@@ -55,7 +55,7 @@
     height: 12px;
     position: relative;
     left: 13%;
-    background: url(../source/img/icons/arrow-icon-negative.png) no-repeat left;
+    background: url(../../source/img/icons/arrow-icon-negative.png) no-repeat left;
 }
 .audience-rich{
     @include card-style;
@@ -135,7 +135,7 @@
 .total__input:checked+label{
     border-color: #7F7FD5;;
     background-color: white;
-    background-image: url(/source/img/icons/check.png);
+    background-image: url(../../source/img/icons/check.png);
     background-repeat: no-repeat;
     background-position: 3px 8px;
 }
@@ -172,7 +172,7 @@
 .follower__input:checked+label{
     border-color: #7F7FD5;;
     background-color: white;
-    background-image: url(/source/img/icons/check.png);
+    background-image: url(../../source/img/icons/check.png);
     background-repeat: no-repeat;
     background-position: 3px 8px;
 }
@@ -188,12 +188,15 @@
 }
 .audience-rich__list-gorizontal{
     display: flex;
+    justify-content: space-between;
+    margin: 4px 0 0 39px;
+    width: 677px;
 }
 .audience-rich__grid{
     display: grid;
     grid-template-rows: repeat(4, 30px);
     grid-template-columns: repeat(7, 91px);
-    margin-top: 5px;
+    margin:5px 0 0 14px;
 }
 .audience-rich__grid-element{
     border: 1px solid #EFF3F9;
@@ -208,8 +211,37 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 139px;
-    width: 42px;
-    align-items: center;
+    height: 131px;
+    width: 28px;
+    align-items: flex-end;
+}
+.list-vertical::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 13px;
+    width: 6px;
+    border-top: 1px solid #4F4F4F;
+}
 
+.element__bottom::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 16px;
+    left: 87px;
+    width: 6px;
+    border-top: 1px solid #4F4F4F;
+    transform: rotate(90deg);
+}
+.element-left::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 44px;
+    right: 94px;
+    width: 6px;
+    border-top: 1px solid #4F4F4F;
+    transform: rotate(90deg);
 }
