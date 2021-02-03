@@ -176,39 +176,5 @@
     background-repeat: no-repeat;
     background-position: 3px 8px;
 }
-.rich__text-checkbox{
-    @include h3-fontstyle;
-    font-weight: 600;
-    font-size: 12px;
-    flood-color: #4F4F4F;
-    margin-right: 10px;
-}
-.audience-rich-wrapper{
-    display: flex;
-}
-.audience-rich__list-gorizontal{
-    display: flex;
-}
-.audience-rich__grid{
-    display: grid;
-    grid-template-rows: repeat(4, 30px);
-    grid-template-columns: repeat(7, 91px);
-    margin-top: 5px;
-}
-.audience-rich__grid-element{
-    border: 1px solid #EFF3F9;
-}
-.audience-rich__text{
-    @include h3-fontstyle;
-    font-size: 12px;
-    line-height: 14px;
-    color: #4F4F4F;
-}
-.audience-rich__list-vertical{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 139px;
-    width: 42px;
-    align-items: center;
-}
+
+
