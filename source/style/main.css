@@ -768,6 +768,16 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.main_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main__card {
@@ -1056,6 +1066,7 @@ input:checked + .slider:before {
   -ms-grid-columns: (91px)[7];
       grid-template-columns: repeat(7, 91px);
   margin: 5px 0 0 14px;
+  height: 120px;
 }
 
 .audience-rich__grid-element {
@@ -1123,5 +1134,34 @@ input:checked + .slider:before {
   border-top: 1px solid #4F4F4F;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.audience-rich__grid::after {
+  content: '';
+  position: relative;
+  top: -104px;
+  right: 1px;
+  width: 642px;
+  height: 121px;
+  background: url(../../source/img/icons/grafic_line.png) no-repeat center;
+}
+
+.reach-device {
+  border-radius: 13px;
+  border: 1px solid #EBEBEB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 13px;
+  background-color: #FDFDFF;
+  width: 288px;
+  padding: 22px 10px 23px 31px;
+}
+
+.reach-device__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=main.css.map */

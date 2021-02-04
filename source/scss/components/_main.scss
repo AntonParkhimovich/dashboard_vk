@@ -1,7 +1,11 @@
 .main__header{
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 32px;
+}
+.main_body{
+    display: flex;
+    justify-content: space-between;
 }
 .main__card{
     @include card-style;
@@ -197,6 +201,7 @@
     grid-template-rows: repeat(4, 30px);
     grid-template-columns: repeat(7, 91px);
     margin:5px 0 0 14px;
+    height: 120px;
 }
 .audience-rich__grid-element{
     border: 1px solid #EFF3F9;
@@ -244,4 +249,22 @@
     width: 6px;
     border-top: 1px solid #4F4F4F;
     transform: rotate(90deg);
+}
+.audience-rich__grid::after{
+    content: '';
+    position: relative;
+    top: -104px;
+    right: 1px;
+    width: 642px;
+    height: 121px;
+    background: url(../../source/img/icons/grafic_line.png) no-repeat center;
+}
+.reach-device{
+    @include card-style;
+    width: 288px;
+    padding: 22px 10px 23px 31px;
+    
+}
+.reach-device__title{
+    @include h2-fontstyle;
 }
