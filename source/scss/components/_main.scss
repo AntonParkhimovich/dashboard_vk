@@ -41,7 +41,6 @@
 .main__content{
     @include h3-fontstyle;
     color: #979797;
-    margin-right: 20px;
 }
 .main__content::after{
     content: '';
@@ -49,7 +48,7 @@
     width: 13px;
     height: 12px;
     position: relative;
-    left: 13%;
+    left: 1%;
     background: url(../../source/img/icons/arrow_icon.png) no-repeat left;
 }
 .negative-meaning:after{
@@ -58,7 +57,7 @@
     width: 13px;
     height: 12px;
     position: relative;
-    left: 13%;
+    left: 1%;
     background: url(../../source/img/icons/arrow-icon-negative.png) no-repeat left;
 }
 .audience-rich{
@@ -263,8 +262,36 @@
     @include card-style;
     width: 288px;
     padding: 22px 10px 23px 31px;
-    
 }
 .reach-device__title{
     @include h2-fontstyle;
+}
+.reach-device__body{
+    display: flex;
+}
+.reach-device__grafic{
+    width: 136px;
+    height: 121px;
+}
+.grafic__content-blue{
+    @include h3-fontstyle;
+    position: absolute;
+    top:1px;
+    left:1px;
+    font-weight: 600;
+    font-size: 12px;
+    color:#FDFDFF;
+}
+.grafic__content-pink{
+    @include h3-fontstyle;
+    font-weight: 600;
+    font-size: 12px;
+    color:#FDFDFF;
+}
+.reach-device__grafic::after{
+    content: '';
+    display: inline-block;
+    background: url(../../source/img/icons/elipse.png)no-repeat center;
+    width: 121px;
+    height: 121px;
 }
