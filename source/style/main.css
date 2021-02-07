@@ -451,7 +451,6 @@ select {
   display: flex;
   position: relative;
   max-width: 1280px;
-  height: 880px;
   margin: 160px auto;
   background-color: #EFF3F9;
   border-radius: 14px;
@@ -467,6 +466,19 @@ select {
   width: 1498px;
   height: 806px;
   background: url(../../source/img/background/background_figure.png) no-repeat center;
+}
+
+.wrapper::after {
+  content: '';
+  position: fixed;
+  width: 413px;
+  height: 413px;
+  top: 800px;
+  right: calc(50% - 873px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7F7FD5), to(#E786D7));
+  background: linear-gradient(#7F7FD5, #E786D7);
+  border-radius: 50%;
+  z-index: 5;
 }
 
 .navbar {
@@ -768,6 +780,8 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
@@ -778,6 +792,8 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
@@ -789,6 +805,7 @@ input:checked + .slider:before {
   border-radius: 13px;
   background-color: #FDFDFF;
   max-width: 341px;
+  min-width: 337px;
   width: 32%;
   padding: 24px 23px;
 }
@@ -871,6 +888,7 @@ input:checked + .slider:before {
   background-color: #FDFDFF;
   width: 768px;
   padding: 27px 22px 22px 24px;
+  overflow: scroll;
 }
 
 .audiece-rich__head {
@@ -889,7 +907,7 @@ input:checked + .slider:before {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  margin-right: 196px;
+  margin-right: 27%;
 }
 
 .audience-rich__form {
@@ -1280,6 +1298,8 @@ input:checked + .slider:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .gender {
@@ -1291,6 +1311,7 @@ input:checked + .slider:before {
   background-color: #FDFDFF;
   width: 675px;
   padding: 23px 35px 0 34px;
+  overflow: scroll;
 }
 
 .gender__header {

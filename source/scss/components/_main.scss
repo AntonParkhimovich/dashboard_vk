@@ -1,16 +1,19 @@
 .main__header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 .main_body{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 .main__card{
     @include card-style;
     max-width: 341px;
+    min-width: 337px;
     width: 32%;
     padding: 24px 23px;
 
@@ -65,6 +68,7 @@
     @include card-style;
     width: 768px;
     padding: 27px 22px 22px 24px;
+    overflow: scroll;
 }
 .audiece-rich__head{
     display: flex;
@@ -73,7 +77,8 @@
 }
 .audience-rich__title {
     @include h2-fontstyle;
-    margin-right: 196px;
+    margin-right: 27%;
+   
 }
 .audience-rich__form{
     display: flex;
@@ -354,14 +359,17 @@
 .main__bottom{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .gender{
     @include card-style;
     width: 675px;
     padding: 23px 35px 0 34px;
+    overflow: scroll;
 }
 .gender__header {
     display: flex;
+    
 }
 .card__title {
     @include h2-fontstyle;

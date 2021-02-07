@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     max-width: 1280px;
-    height: 880px;
+    // height: 880px;
     margin:160px auto;
     background-color: #EFF3F9;
     border-radius: 14px
@@ -18,4 +18,16 @@
     width: 1498px;
     height: 806px;
     background: url(../../source/img/background/background_figure.png) no-repeat center;
+}
+.wrapper::after{
+    content: '';
+    position: fixed;
+    width: 413px;
+    height: 413px;
+    top: 800px;
+    right: calc(50% - 873px);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7F7FD5), to(#E786D7));
+    background: linear-gradient(#7F7FD5, #E786D7);
+    border-radius: 50%;
+    z-index: 5;
 }
