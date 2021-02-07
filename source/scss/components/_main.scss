@@ -265,6 +265,7 @@
 }
 .reach-device__title{
     @include h2-fontstyle;
+    margin-bottom: 38px;
 }
 .reach-device__body{
     display: flex;
@@ -275,23 +276,77 @@
 }
 .grafic__content-blue{
     @include h3-fontstyle;
-    position: absolute;
-    top:1px;
-    left:1px;
+    position: relative;
+    bottom: 64px;
+    left: 23px;
     font-weight: 600;
     font-size: 12px;
-    color:#FDFDFF;
+    color: #FDFDFF;
+    width: 49px;
+    height: 20px;
 }
 .grafic__content-pink{
     @include h3-fontstyle;
     font-weight: 600;
     font-size: 12px;
     color:#FDFDFF;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    bottom: 123px;
+    left: 104px;
+    z-index: 1;
 }
-.reach-device__grafic::after{
+.reach-device__grafic::before{
     content: '';
     display: inline-block;
     background: url(../../source/img/icons/elipse.png)no-repeat center;
     width: 121px;
     height: 121px;
+}
+.reach-device__grafic::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: 160px;
+    left: 75px;
+    background: url(../../source/img/icons/triangle.png)no-repeat center;
+    width: 61px;
+    height: 47px;
+}
+.reach-device__content{
+    @include h3-fontstyle;
+    font-weight: 600;
+    font-size: 12px;
+    color: #4F4F4F;
+    height: 16px;
+    margin-left: 38px;
+}
+.reach-device__list{
+    position: relative;
+    top: -18px;
+}
+.rech-device__item--pink::before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 13px;
+    width: 16px;
+    height: 16px;
+    background-color: #E786D7;
+    border: 1px solid #E786D7;
+    border-radius: 5px;
+}
+.rech-device__item--blue::before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 13px;
+    width: 16px;
+    height: 16px;
+    background-color: #7F7FD5;
+    border: 1px solid#7F7FD5;
+    border-radius: 5px;
 }
