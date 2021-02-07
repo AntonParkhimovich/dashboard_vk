@@ -6,6 +6,7 @@
 .main_body{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 .main__card{
     @include card-style;
@@ -350,6 +351,10 @@
     border: 1px solid#7F7FD5;
     border-radius: 5px;
 }
+.main__bottom{
+    display: flex;
+    justify-content: space-between;
+}
 .gender{
     @include card-style;
     width: 675px;
@@ -405,4 +410,33 @@
     height: 167px;;
     background: url(../../source/img/background/Gender-graph.png) no-repeat center;
     background-position: -22px 0;
+}
+.geo {
+    @include card-style;
+    width: 381px;
+    padding: 23px 25px 0 24px;
+}
+.geo__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+.geo__title {
+    @include h2-fontstyle;
+}
+.geo__country{
+    display: flex;
+    justify-content: space-between;
+    width: 77px;
+}
+.geo__content {
+    @include h3-fontstyle;
+    font-weight: 600;
+    font-size: 12px;
+    color: #4F4F4F;
+}
+.geo__graphic {
+    background: url(../../source/img/background/graphic-geo.png) no-repeat center;
+    width: 332px;
+    height: 140px;
 }
