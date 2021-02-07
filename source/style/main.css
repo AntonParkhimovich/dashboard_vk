@@ -1271,4 +1271,86 @@ input:checked + .slider:before {
   border: 1px solid #7F7FD5;
   border-radius: 5px;
 }
+
+.gender {
+  border-radius: 13px;
+  border: 1px solid #EBEBEB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 13px;
+  background-color: #FDFDFF;
+  width: 675px;
+  padding: 23px 35px 0 34px;
+}
+
+.gender__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 335px;
+  margin-bottom: 32px;
+}
+
+.gender__names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 12px;
+  width: 125px;
+}
+
+.gender__name--pink::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: #E786D7;
+  border: 1px solid #E786D7;
+  border-radius: 5px;
+}
+
+.gender__name--blue::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: #7F7FD5;
+  border: 1px solid #7F7FD5;
+  border-radius: 5px;
+}
+
+.graph__container {
+  width: 631px;
+  height: 167px;
+}
+
+.gender__graph {
+  width: 631px;
+  height: 167px;
+  background: url(../../source/img/background/Gender-graph.png) no-repeat center;
+  background-position: -22px 0;
+}
 /*# sourceMappingURL=main.css.map */

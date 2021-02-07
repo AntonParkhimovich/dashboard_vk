@@ -350,3 +350,59 @@
     border: 1px solid#7F7FD5;
     border-radius: 5px;
 }
+.gender{
+    @include card-style;
+    width: 675px;
+    padding: 23px 35px 0 34px;
+}
+.gender__header {
+    display: flex;
+}
+.card__title {
+    @include h2-fontstyle;
+    margin-right: 335px;
+    margin-bottom: 32px;
+}
+.gender__names {
+    display: flex;
+    justify-content: space-between;
+    @include h3-fontstyle;
+    font-weight: 600;
+    font-size: 12px;
+     width: 125px;
+}
+.gender__name--pink::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    background-color: #E786D7;
+    border: 1px solid #E786D7;
+    border-radius: 5px;
+}
+.gender__name--blue::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    background-color: #7F7FD5;
+    border: 1px solid#7F7FD5;
+    border-radius: 5px;
+}
+ 
+.graph__container {
+    width: 631px;
+    height: 167px;;
+}
+.gender__graph {
+    width: 631px;
+    height: 167px;;
+    background: url(../../source/img/background/Gender-graph.png) no-repeat center;
+    background-position: -22px 0;
+}
